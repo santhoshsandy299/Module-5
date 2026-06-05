@@ -21,9 +21,18 @@ The program defines a class `Demo` with:
    - Create an instance of the `Demo` class.
    - Delete the object using the `del` keyword.
 ## Program
-Add code Here
-
+```
+class demo:
+    def __init__(self):
+        self.status="Alive"
+    def __del__(self):
+        print("The object no longer exists")
+a=demo()
+print(a.status)
+```
 ## 🧪 Output
+<img width="964" height="219" alt="508683843-a7b0a93d-60ef-4303-a100-e45895dc50bb" src="https://github.com/user-attachments/assets/9aecc176-6737-48a7-bbcc-5ded06a5d529" />
+
 
 ## Result
-
+Thus the program demonstrates how to implement a destructor in Python using a simple class has been executed successfully
