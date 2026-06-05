@@ -24,6 +24,25 @@ To write a Python program to calculate **Add, Sub & Division** using **Multiple 
    - Display the results of the three operations.
 
 ## 💻 Program 
-Add code here
+```
+class Calculation1:  
+    def Summation(self,a,b):  
+        return a+b;  
+class Calculation2:  
+    def sub(self,a,b):  
+        return a-b;  
+class Derived(Calculation1,Calculation2):  
+    def Divide(self,a,b):  
+        return a/b;  
+a=int(input())
+b=int(input())
+d = Derived()  
+print(d.Summation(a,b))  
+print(d.sub(a,b))  
+print(d.Divide(a,b))
+```
 ## Output Example
 
+<img width="997" height="218" alt="508684217-53f83599-5aae-4f0f-bf08-887be99d52cc" src="https://github.com/user-attachments/assets/3e1e7a7f-a0c4-413e-88ae-229e86b9053d" />
+## Result:
+Thus the program demonstrates multiple inheritance by performing basic arithmetic operations — Addition, Subtraction, and Division — using three classes has been executed successfully.
