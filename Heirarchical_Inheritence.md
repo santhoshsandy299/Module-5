@@ -31,6 +31,55 @@ To write a Python program that uses **Hierarchical Inheritance** to input and di
 5. Display collected information using class methods.
 
 ## Program
-Add code here
+```
+class Details:
+    def __init__(self,id,name,gen):
+        self.id=id
+        self.name=name
+        self.gen=gen
+class Doctor(Details):
+    def __init__(self,id,name,gen,hos,dept):
+        super().__init__(id,name,gen)
+        self.hos=hos
+        self.dept=dept
+    def display(self):
+        print("Doctor Object")
+        print("Id: ",self.id)
+        print("Name: ",self.name)
+        print("Gender: ",self.gen)
+        print("Hospital: ",self.hos)
+        print("Department: ",self.dept)
+class Patient(Details):
+    def __init__(self,id,name,gen,hos,dept):
+        super().__init__(id,name,gen)
+        self.hos=hos
+        self.dept=dept
+    def display(self):
+        print("\nPatient Object")
+        print("Id: ",self.id)
+        print("Name: ",self.name)
+        print("Gender: ",self.gen)
+        print("Hospital: ",self.hos)
+        print("Department: ",self.dept)
+id=int(input())
+name=input()
+gen=input()
+hos=input()
+dept=input()
+
+pid=int(input())
+pname=input()
+pgen=input()
+phos=input()
+pdept=input()
+
+a=Doctor(id,name,gen,hos,dept)
+b=Patient(pid,pname,pgen,phos,pdept)
+a.display()
+b.display()
+```
 ## Sample Output
 
+<img width="941" height="500" alt="508684018-b0c4c08d-736a-4268-acfb-52c2cc4e026b" src="https://github.com/user-attachments/assets/fe5b64be-90b6-44b0-81e6-39a08f542fce" />
+## Result:
+Thus the program that uses Hierarchical Inheritance to input and display Doctor and Patient details hase been executed successfully.
